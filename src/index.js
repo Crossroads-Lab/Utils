@@ -1,32 +1,32 @@
 // Imports.
-import './functionUtils';
-import './numberUtils';
-import './objectUtils';
-import './stringUtils';
+import './functionUtils.js';
+import './numberUtils.js';
+import './objectUtils.js';
+import './stringUtils.js';
 
 // Exports.
-export { default as asyncify } from './asyncify';
-export { default as clock } from './clock';
-export { default as debounce } from './debounce';
-export { default as getUrlString } from './getUrlString';
-export { default as path } from './path';
-export { default as promisify } from './promisify';
-export { default as sleep } from './sleep';
-export { default as throttle } from './throttle';
+export { default as asyncify } from './asyncify.js';
+export { default as clock } from './clock.js';
+export { default as debounce } from './debounce.js';
+export { default as getUrlString } from './getUrlString.js';
+export { default as path } from './path.js';
+export { default as promisify } from './promisify.js';
+export { default as sleep } from './sleep.js';
+export { default as throttle } from './throttle.js';
 
 // Node.js exports.
 try {
-  require('./numberUtils');
-  require('./objectUtils');
-  require('./stringUtils');
+  require('./numberUtils.js');
+  require('./objectUtils.js');
+  require('./stringUtils.js');
   module.exports = {
-    asyncify: require('./asyncify'),
-    clock: require('./clock'),
-    debounce: require('./debounce'),
-    getUrlString: require('./getUrlString'),
-    path: require('./path'),
-    promisify: require('./promisify'),
-    sleep: require('./sleep'),
-    throttle: require('./throttle')
+    asyncify: require('./asyncify.js'),
+    clock: require('./clock.js'),
+    debounce: require('./debounce.js'),
+    getUrlString: require('./getUrlString.js'),
+    path: require('./path.js'),
+    promisify: require('./promisify.js'),
+    sleep: require('./sleep.js'),
+    throttle: require('./throttle.js')
   }
 } catch {}
